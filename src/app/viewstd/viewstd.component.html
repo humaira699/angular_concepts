@@ -1,0 +1,12 @@
+<table>    
+    <tr>
+        <td>Student RegNumber</td>    
+        <td>Student Name</td>
+    </tr>
+    <tr *ngFor="let student of Class_stds">
+        <td appAppHighlight>{{student.regNo}}</td>
+        <td>{{student.name}}</td>     
+    </tr>
+    
+</table>
+

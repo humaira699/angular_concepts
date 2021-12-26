@@ -1,0 +1,12 @@
+<label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
+     
+<h3>
+    Date: {{dateToday | date:'longTime'}}<br>
+    Date: {{dateToday | date:'shortTime'}}<br>
+    Decimal: {{number_ | number: '1.2' }}<br>
+    Name: {{name | lowercase}}<br>
+    Name: {{name | uppercase}}<br>
+    Slice an array: {{ [1,2,3,4,5,6] | slice:1:5 }}
+</h3>

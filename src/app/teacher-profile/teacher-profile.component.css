@@ -1,0 +1,24 @@
+.list-group{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.eventsExamples{
+    width: 50%;
+    margin-left: 50px;
+    border: 1px solid grey;
+    margin-bottom: 40px;
+}
+.eventsExamples span{
+    color: red;
+    text-decoration: bold;
+    margin-left: 10px;
+}
+.eventsExamples p{
+    border: 1px solid grey;
+    width: 25%;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,36 @@
+<ul class="list-group">
+    <li class="list-group-item list-group-item-action list-group-item-dark">
+        Name
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{teacher.name}}
+      <span class="badge"><img [src]="img_src" width="40px">        
+    </span>
+    </li>
+    <li class="list-group-item list-group-item-action list-group-item-dark">
+        Designation
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{teacher.designation}}    
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <input id="class" [(ngModel)]="teacher.class" placeholder="class">
+        <span class="badge badge-primary badge-pill">{{teacher.class}}</span>
+    </li>
+</ul>
+<div class="eventsExamples"><h2>Event Binding Examples</h2>
+    <span>Example 1
+        <p (click)="message()">
+            Click Me
+        </p>
+        {{eventMessage}}
+    </span><br>
+    <span> Example 2
+        <p>    
+            <input (keyup)="onKeyUp($event)">
+        </p>
+        {{KeyeventMessage}}        
+    </span>
+       
+
+</div>

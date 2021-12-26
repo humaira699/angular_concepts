@@ -1,0 +1,12 @@
+h2{
+    margin-left: 50px;
+}
+table{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 70%;
+}
+table tr{
+    border: 1px solid grey;
+    
+}

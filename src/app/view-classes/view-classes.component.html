@@ -1,0 +1,15 @@
+<h2>Data being accessed from express</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Class ID</th>
+            <th>Class Name</th>          
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let class of classes | async'>
+            <td>{{class._id | json}}</td>
+            <td>{{class.name | json}}</td>            
+        </tr> 
+    </tbody>
+</table>

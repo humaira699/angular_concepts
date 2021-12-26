@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th> 
+            <th>Roll Number</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let student of students | async'>
+            <td>{{student._id}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.rollno}}</td>
+        </tr>
+    </tbody>
+</table>

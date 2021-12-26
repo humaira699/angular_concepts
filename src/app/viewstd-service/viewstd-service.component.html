@@ -1,0 +1,22 @@
+<h2>Data being accessed from express</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th> 
+            <th>Roll Number</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let student of students | async'>
+            <td>{{student._id | json}}</td>
+            <td>{{student.name | json}}</td>
+            <td>{{student.rollno | json}}</td>
+            <!--<td>{{student.FirstName}}</td>
+            <td>{{student.LastName}}</td>
+            <td>{{student.Branch}}</td>
+            <td>{{student.DOB}}</td>
+            <td>{{student.Gender}}</td>-->
+        </tr> 
+    </tbody>
+</table>
